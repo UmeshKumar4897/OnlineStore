@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        section{
+            width: 20%;
+            height: 360px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            background-color: rgb(235, 240, 238);
+            margin: auto;
+            margin-top: 100px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        form input{
+            padding: 5px;
+            margin: 8px;
+            border-radius: 5px;
+        }
+       
+        
+        h2{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .str{
+            color: red;
+        }
+        #eErr,#pErr{
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Log In </h2>
+        <div>
+            <form>
+            <label for="email">Email:<span class="str">*</span></label><br>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <span id="eErr">Please enter email</span><br>
+
+            <label for="pswd">Password:<span class="str">*</span></label>
+            <input type="password" name="pswd" id="pswd" placeholder="Password">
+            <span id="pErr">Please enter password</span><br>
+
+            <input type="button" name="btn" id="login" value="Login">
+            <h4>Don't have account<a href="#"> Click here</a></h4>
+            <h4>Forget Password<a href="#"> Reset here</a></h4>
+            </form>  
+        </div>
+        
+    </section>
+    <!--JavaScript-->
+    <script>
+        document.getElementById('login').addEventListener('click', function(){
+            let email,pswd;
+            email=document.getElementById("email").value;
+            pswd=document.getElementById("pswd").value;
+
+            if (email==""){
+                document.getElementById("eErr").style.display='block';
+            }else{
+                document.getElementById("eErr").style.display='none';
+            }
+            if(pswd==""){
+                document.getElementById("pErr").style.display='block';
+            }else{
+                document.getElementById("pErr").style.display='none';
+            }
+            
+            if (email !="" && pswd !=""){
+                alert('Logged In Successfully');
+            }
+        })
+    </script>
+</body>
+</html>

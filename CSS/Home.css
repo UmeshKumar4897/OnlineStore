@@ -1,0 +1,334 @@
+body {
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 30px;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    /*position: fixed;
+    top: 0;*/
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+    list-style: none;
+    font-family: (popins, sans-serif);
+    text-align: center;   
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.top-sec{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.spn-1,.spn-2{  
+    font-size:x-large;
+    font-weight: 800;
+}
+.spn-1{
+    color: blue;
+}
+.spn-2{
+    color: orange;
+}
+.awsm-icon{    /*three font awesome icon style*/
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(226, 214, 214);
+    width: 20px;
+    height: 20px;
+}
+.font-awsm-nav{
+    margin-left: 150px;
+    margin-top: 3px;
+}
+/*Header part ends*/
+main{
+    background-color: #dfdfdff1;
+}
+/*Banner part start*/
+.banner-section{
+    width: 100%;
+    height: 340px;
+}
+
+[src="./Assets/banner-bg1.jpg"]{
+    width: 100%;
+    height: 350px
+}
+.banner-h2{
+    position: absolute;
+    top: 130px;
+    left: 500px;
+    text-align: center;
+}
+section p:nth-child(3){
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    text-align: center;
+}
+.organic{
+    color: orange;
+}
+.shop-btn{
+    position: absolute;
+    top: 260px;
+    left: 610px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: transparent;
+}
+/*Banner part ends*/
+/*Feature part start*/
+.Our-feature{
+   /* position: sticky;
+    top: 200px;*/
+    font-size:x-large;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    background-color: orange;
+    border-top: 10px solid orange;
+    border-bottom: 10px solid orange;
+    border-left: 130px solid orange;
+    border-right: 130px solid orange;
+    clip-path: polygon(80% 1%, 75% 50%, 80% 90%, 20% 90%, 25% 40%, 20% 0%);
+}
+.our{
+    
+    font-size: x-large;
+    position: relative;
+    left: 60px;  
+    
+}
+.ploygon-sec{
+    margin: 50px 440px;
+    text-align: center;
+    font-size:xx-large;
+   /* position: sticky;
+    top: 100px;*/
+}
+.features-section{
+   /* position: sticky;
+    top: 200px;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 80%;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 150px;
+}
+.card{
+    border-radius: 5px;
+    height: 300px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.prdt-grey-bordr{
+  border: 1px solid rgb(219, 218, 218);
+  height: 370px;
+  margin: 5px 12px;  
+}
+.read-more-btn{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+ }
+ .feature-img{
+    width: 180px;
+    height: 130px;
+    padding-top: 50px;
+ }
+/*Feature part end*/
+/*Our Product part start*/
+
+.first-row-prod-img{
+    width: 210px;
+    height: 170px;
+}
+
+/*Our Product part-2 start*/
+.divs{
+    height: 30px;
+}
+.sec-row-prod-img{
+    width: 210px;
+    height: 170px;
+    
+}
+/*Our Product part ends*/
+/*Product Categories section start*/
+
+.prdct-categ-sec{
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; */
+    display: flex;
+    width: 80%;
+    margin: 0 110px 0 120px;
+    
+}
+.prdct-categ-card{
+    flex: 1;
+    margin: 0 12px 0 12px;
+    width: 240px;
+    height: 330px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    }
+.prdct-categ-card:hover{
+    transform: scale(1.2);
+    } 
+.prdct-categ-img{
+    width: 160px;
+    height: 200;
+    margin: 10px 70px 0px 10px;
+    padding-top: 20px;
+    
+    }
+    .prdt-categ-grey-bord{
+        border: 1px solid rgb(212, 211, 211);
+        margin: 10px;
+        height: 310px;
+    }
+/*Product Categories section ends*/
+/*Customer Review section start*/
+.custom-rev-sec{
+   /* display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+    display: flex;
+    margin: 0 110px;
+}
+.custom-rev-card{
+    flex: 1;
+    width: 350px;
+    height: 365px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    
+    margin: 0 10px;
+}
+.custom-rev-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.dv-cust-rev{
+    border: 1px solid rgb(209, 207, 207);
+    margin: 10px;
+    height: 340px;
+}
+/*Customer Review section end*/
+/*Our Blog start*/
+.Blog-sec{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.Blog-card{
+    flex: 1;
+    width: 320px;
+    height: 450px;
+    margin: 0px 15px 20px 15px ;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4); 
+}
+.blog-img{
+    width: 333px;
+    height: 230px;
+    border-radius: 5px;
+       
+}
+hr{
+    width: 90%;
+    color: rgb(212, 209, 209);
+}
+.user-icon{
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 80px;
+}
+
+/*Footer Section Start*/
+.foot-head{
+    font-size: x-large;
+    color: blue;
+}
+.foot-heads{
+    font-size: x-large;
+    color: rgb(255, 145, 0);
+    margin-bottom: 20px;
+}
+.footer-sec{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.foot-card{
+    float: left;
+    margin:  0 30px;
+    padding-top: 30px;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+}
+#email{
+    margin: 20px 0;
+    
+}
+.copyright{
+    color: orange;
+}
+.copirit{
+    text-align: center; 
+}
+.subscribe-btn{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+ }
+ .font-icons{
+    background-color: rgb(231, 231, 231);
+    font-size: x-large;
+    border-radius: 5px;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+ }
+ .contact-icons{
+    margin: 15px;
+ }

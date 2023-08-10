@@ -1,0 +1,50 @@
+
+@media only screen and (min-width:720px) and (max-width:1080px){
+    section{  
+        grid-template-columns: repeat(3, 1fr);
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    } 
+    .banner-section{
+        width: 100%;
+        height: auto;
+    }
+    .product-sec{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:720px){
+    section,.product-sec{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+    section,.product-sec{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
